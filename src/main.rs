@@ -144,6 +144,7 @@ impl Interpreter {
             Color::Green => print!("{}", text.green()),
             Color::Blue => print!("{}", text.blue()),
         }
+        stdout().flush().expect("Stdout flush faild.");
     }
 
     fn read_key_press() -> u8 {
