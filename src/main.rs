@@ -139,10 +139,10 @@ impl Interpreter {
 
     fn print_with_color(&self, text: String) {
         match self.color {
-            Color::White => println!("{}", text.white()),
-            Color::Red => println!("{}", text.red()),
-            Color::Green => println!("{}", text.green()),
-            Color::Blue => println!("{}", text.blue()),
+            Color::White => print!("{}", text.white()),
+            Color::Red => print!("{}", text.red()),
+            Color::Green => print!("{}", text.green()),
+            Color::Blue => print!("{}", text.blue()),
         }
     }
 
